@@ -177,3 +177,38 @@
 .download-button {
     background-color: rgb(100, 151, 105) !important;
 }
+
+.fees-card-bg-color {
+    background-color: rgb(195, 235, 250)
+}
+
+.status-btn {
+    background-color: rgb(205, 236, 249);
+    border-radius: 20px;
+}
+
+.status-txt {
+    color: rgb(39, 184, 246) !important;
+}
+
+.rounded-table {
+    border-radius: 20px 20px 0 0;
+    overflow: hidden;
+    box-shadow: 1px 1px 1px 0px rgb(218, 217, 217);
+}
+
+.top-left-radius {
+    border-top-left-radius: 20px;
+}
+
+.top-right-radius {
+    border-top-right-radius: 20px;
+}
+
+.border-bottom-modal-title {
+    border-bottom: 1px solid rgb(108, 107, 107);
+}
+
+.border-right {
+    border-right: 2px solid rgb(191, 189, 189);
+}

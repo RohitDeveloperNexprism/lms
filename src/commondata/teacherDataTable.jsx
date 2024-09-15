@@ -27,17 +27,12 @@ const TeacherDataTable = () => {
             name: 'Teachers Name',
             selector: row => {
                 return (
-                    <div>
-                        <Row className='align-items-center'>
-                            <Col>
-                                <img src={logo} alt="error" />
-                            </Col>
-                            <Col>
-                                <p>{row.teacherName}</p>
-                                <p>{row.email}</p>
-                            </Col>
-                        </Row>
-
+                    <div className='d-flex gap-2 align-items-center'>
+                        <img src={logo} alt={""} className='rounded-circle w-25 h-25' />
+                        <div>
+                            <p className='sm text-black'>{row.teacherName}</p>
+                            <p className='secondary_text'>{row.email}</p>
+                        </div>
                     </div>
                 );
             },
@@ -133,18 +128,18 @@ const TeacherDataTable = () => {
                     </Col>
                 </Row>
             </Card.Header>
-            <Card.Body>
-                <DataTable
-                    columns={columns}
-                    data={data}
-                    pagination
-                    striped
-                    paginationComponentOptions={paginationComponentOptions}
-                    selectableRows
-                    onSelectedRowsChange={handleRowSelected}
-                    selectableRowsComponentProps={{ indeterminate: isAllSelected }}
-                />
-            </Card.Body>
+                <Card.Body>
+                    <DataTable
+                        columns={columns}
+                        data={data}
+                        pagination
+                        striped
+                        paginationComponentOptions={paginationComponentOptions}
+                        selectableRows
+                        onSelectedRowsChange={handleRowSelected}
+                        selectableRowsComponentProps={{ indeterminate: isAllSelected }}
+                    />
+                </Card.Body>
         </Card>
     );
 };

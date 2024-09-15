@@ -26,6 +26,10 @@ import HostelStudent from '../components/pages/hostel/student/HostelStudent';
 import Mess from '../components/pages/hostel/mess/Mess';
 import Visitors from '../components/pages/hostel/visitors/Visitors';
 import VisitorAdd from '../components/pages/hostel/visitors/VisitorAdd';
+import CollectedFees from '../components/finance/colected-fees/ColectedFees';
+import PendingFees from '../components/finance/pending-fees/PendingFees';
+import SchoolExpenses from '../components/finance/school-expenses/SchoolExpenses';
+import PayRoll from '../components/finance/payroll/payRoll';
 const Dashboard = lazy(() => import("../components/dashboard/dashboard"));
 
 export const RouterData = [
@@ -53,6 +57,10 @@ export const RouterData = [
     { path: `${import.meta.env.BASE_URL}/create-exam`, element: <CreateExam /> },
     { path: `${import.meta.env.BASE_URL}/exam-schedule`, element: <ExamSchedule /> },
     { path: `${import.meta.env.BASE_URL}/previous-exam`, element: <PreviousExam /> },
+    { path: `${import.meta.env.BASE_URL}/collected-fees`, element: <CollectedFees /> },
+    { path: `${import.meta.env.BASE_URL}/pending-fees`, element: <PendingFees /> },
+    { path: `${import.meta.env.BASE_URL}/school-expenses`, element: <SchoolExpenses /> },
+    { path: `${import.meta.env.BASE_URL}/payroll`, element: <PayRoll /> },
 
 
 

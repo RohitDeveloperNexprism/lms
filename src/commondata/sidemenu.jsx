@@ -195,9 +195,18 @@ export const MENUITEMS = [
         type: "sub",
         active: false,
         children: [
-          // {
-          //   path: `${import.meta.env.BASE_URL}students-list`, type: "link", title: "Students List",
-          // },
+          {
+            path: `${import.meta.env.BASE_URL}collected-fees`, type: "link", title: "Collected Fees",
+          },
+          {
+            path: `${import.meta.env.BASE_URL}pending-fees`, type: "link", title: "Pending Fees",
+          },
+          {
+            path: `${import.meta.env.BASE_URL}school-expenses`, type: "link", title: "School Expenses",
+          },
+          {
+            path: `${import.meta.env.BASE_URL}payroll`, type: "link", title: "Payroll",
+          },
         ],
       },
     ],
