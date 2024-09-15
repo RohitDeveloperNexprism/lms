@@ -8,51 +8,13 @@ import { closeModal } from '../../../../redux/slice/allModalSlice';
 export default function AddClass() {
     const { isOpen, data } = useSelector((state) => state.allCommonModal)
     const dispatch = useDispatch();
-    const initialValues = {
-        title: "",
-        banner_image: "",
-        status: true,
-        slug: "",
-        tags: [],
-        excerpt: "",
-        category: null,
-        content: "",
-        meta_title: "",
-        meta_description: "",
-        meta_keywords: "",
-        og_tag: "",
-        schema_markup: "",
-    };
+
 
     const { values, errors, handleBlur, touched, handleChange, handleSubmit, resetForm, setFieldValue, setFieldTouched, validateForm } = useFormik({
-        initialValues: initialValues,
+        initialValues: '',
         validationSchema: '',
         onSubmit: async (values) => {
-            const formData = new FormData();
-            Object.entries(values).forEach(([key, value]) => {
-                if (key === 'tags') {
-                    value.forEach(tag => {
-                        formData.append('tags', tag.label);
-                    })
-                } else if (key === 'category') {
-                    value.forEach(cate => {
-                        formData.append('category', cate.value);
-                    })
-                }
-                else {
-                    formData.append(key, value);
-                }
-            });
-            try {
-                const response = await addNewBlog(formData);
-                if (response?.data?.http_status_code === 200) {
-                    toast.success(response.data.message)
-                    refetch()
-                    navigate(`${getBlogsPage()}`)
-                }
-            } catch (error) {
-                console.error(error);
-            }
+
         },
     });
     const options = [
@@ -78,27 +40,24 @@ export default function AddClass() {
                         </Row> */}
                         <Row className="mb-md-2">
                             <Form.Group as={Col} md="6" className='custom_col'>
-                                <Form.Control title="text" name="title" onChange={handleChange} onBlur={handleBlur} value={values.title} placeholder='Class Name' />
-                                {errors.title && touched.title ? (
-                                    <p className={`error`}>{errors.title}</p>
-                                ) : null}
+                                <Form.Control title="text" name="title" placeholder='Class Name' />
+
                             </Form.Group>
                             <Form.Group as={Col} md="6" className='custom_col'>
                                 <Select
                                     options={options}
                                     name="category"
-                                    value={values.category}
-                                    onChange={(selectedOptions) =>
-                                        setFieldValue("category", selectedOptions)
-                                    }
-                                    onBlur={handleBlur}
-                                    // isMulti
                                     className="select_box"
+                                    // value={values.category}
+                                    // onChange={(selectedOptions) =>
+                                    //     setFieldValue("category", selectedOptions)
+                                    // }
+                                    // onBlur={handleBlur}
                                     isSearchable
                                 />
-                                {errors.banner_image && touched.banner_image ? (
+                                {/* {errors.banner_image && touched.banner_image ? (
                                     <p className={`error`}>{errors.banner_image}</p>
-                                ) : null}
+                                ) : null} */}
                             </Form.Group>
                         </Row>
                         <Row className="mb-md-2">
@@ -106,14 +65,14 @@ export default function AddClass() {
                                 <Form.Control
                                     title="text"
                                     name="title"
-                                    onChange={handleChange}
-                                    onBlur={handleBlur}
-                                    value={values.title}
+                                    // onChange={handleChange}
+                                    // onBlur={handleBlur}
+                                    // value={values.title}
                                     placeholder='Room Number'
                                 />
-                                {errors.title && touched.title ? (
+                                {/* {errors.title && touched.title ? (
                                     <p className={`error`}>{errors.title}</p>
-                                ) : null}
+                                ) : null} */}
                             </Form.Group>
                             <Form.Group as={Col} md="6" className='custom_col'>
                                 <Button type="submit" className="btn-primary mx-auto w-100">Create Class</Button>
@@ -125,28 +84,28 @@ export default function AddClass() {
                                 <Select
                                     options={options}
                                     name="category"
-                                    value={values.category}
-                                    onChange={(selectedOptions) =>
-                                        setFieldValue("category", selectedOptions)
-                                    }
-                                    onBlur={handleBlur}
+                                    // value={values.category}
+                                    // onChange={(selectedOptions) =>
+                                    //     setFieldValue("category", selectedOptions)
+                                    // }
+                                    // onBlur={handleBlur}
                                     placeholder="Select Class"
                                     className="select_box"
                                     isSearchable
                                 />
-                                {errors.banner_image && touched.banner_image ? (
+                                {/* {errors.banner_image && touched.banner_image ? (
                                     <p className={`error`}>{errors.banner_image}</p>
-                                ) : null}
+                                ) : null} */}
                             </Form.Group>
                             <Form.Group as={Col} md="4" lg="6" className='custom_col mb-2'>
                                 <Select
                                     options={options}
                                     name="category"
-                                    value={values.category}
-                                    onChange={(selectedOptions) =>
-                                        setFieldValue("category", selectedOptions)
-                                    }
-                                    onBlur={handleBlur}
+                                    // value={values.category}
+                                    // onChange={(selectedOptions) =>
+                                    //     setFieldValue("category", selectedOptions)
+                                    // }
+                                    // onBlur={handleBlur}
                                     placeholder="Select Subject"
                                     className="select_box"
                                     isSearchable
@@ -159,18 +118,18 @@ export default function AddClass() {
                                 <Select
                                     options={options}
                                     name="category"
-                                    value={values.category}
-                                    onChange={(selectedOptions) =>
-                                        setFieldValue("category", selectedOptions)
-                                    }
-                                    onBlur={handleBlur}
+                                    // value={values.category}
+                                    // onChange={(selectedOptions) =>
+                                    //     setFieldValue("category", selectedOptions)
+                                    // }
+                                    // onBlur={handleBlur}
                                     placeholder="Select Teacher"
                                     className="select_box"
                                     isSearchable
                                 />
-                                {errors.banner_image && touched.banner_image ? (
+                                {/* {errors.banner_image && touched.banner_image ? (
                                     <p className={`error`}>{errors.banner_image}</p>
-                                ) : null}
+                                ) : null} */}
                             </Form.Group>
                         </Row>
                         <Row className="mt-4">

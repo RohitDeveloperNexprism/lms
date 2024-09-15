@@ -1,7 +1,7 @@
 :root {
     --primary-bg-color: #126b9d;
     --primary-light-bg-color: #e5eeef;
-    --yellow: #FFE39A;
+    --yellow: #FAE27C;
     --primary-bg-hover: #233ac5;
     --blue: #303972;
     --primary-bg-border: #5161c1;
@@ -11,6 +11,10 @@
 .sm {
     font-size: 14px !important;
     font-weight: 500;
+}
+
+.semibold {
+    font-weight: 500 !important;
 }
 
 .secondary_text {
@@ -175,13 +179,14 @@ p {
 .search_bar .search_icon {
     position: absolute;
     left: 30px;
-    top: 10px;
+    top: 8px;
     color: #8A8D8E;
 }
 
 .search_bar .search_btn {
     border-radius: 50px;
     color: #242424 !important;
+    font-size: 14px;
     padding: 8px 20px;
     min-width: auto;
     background-color: var(--yellow) !important;
@@ -415,6 +420,10 @@ label {
     width: 250px;
 }
 
+.food_img_upload .dnd_field {
+    width: 90%;
+}
+
 .dnd_field2 {
     border: 1px dashed #C1BBEB;
     text-align: center;
@@ -527,4 +536,129 @@ label {
 
 .complaint_title span {
     font-weight: 600;
+}
+
+.room_card_body {
+    padding: 25px 35px;
+}
+
+.room_card {
+    padding: 30px 20px;
+    border-radius: 20px;
+    /* padding: 0 !important; */
+}
+
+.room_number {
+    font-size: 14px;
+    color: #242424;
+}
+
+.room_card_first {
+    background-color: #C3E6FA;
+}
+
+.room_card_second {
+    background-color: #C3FAC8;
+}
+
+.room_card_third {
+    background-color: #C4C3FA;
+}
+
+.add_room_form .form-control::placeholder,
+.add_room_form .form-select::placeholder {
+    color: #A098AE !important;
+}
+
+.input_wrapper {
+    display: flex;
+    align-items: baseline;
+}
+
+.input_wrapper label {
+    width: 250px;
+}
+
+@media screen and (max-width: 680px) {
+    .input_wrapper {
+        display: block;
+    }
+
+    .input_wrapper label {
+        width: 100%;
+    }
+}
+
+.reason_input {
+    background-color: #E4E4E4;
+    padding: 10px;
+    border-radius: 6px;
+    width: 100%;
+}
+
+
+.visitor_add_form .form-control::placeholder,
+.visitor_add_form .form-select::placeholder {
+    color: #A098AE !important;
+}
+
+
+
+
+/* toggle button */
+.toggle-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70px;
+    height: 35px;
+    background-color: #CBFAC34D;
+    border-radius: 50px;
+    cursor: pointer;
+    position: relative;
+    transition: background-color 0.3s ease;
+}
+
+.toggle-button.active {
+    background-color: #FAC3C34D;
+}
+
+.toggle-button .toggle-indicator {
+    position: absolute;
+    left: 10px;
+    width: 10px;
+    top: 13px;
+    height: 10px;
+    background-color: #4AE850;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+}
+
+.toggle-button.active .toggle-indicator {
+    left: 50px;
+    background-color: #E84A4A;
+}
+
+.toggle-button span {
+    color: #4AE850;
+    font-weight: bold;
+    font-size: 14px;
+    transition: color 0.3s ease;
+}
+
+.toggle-button.active span {
+    color: #E84A4A;
+}
+
+.create_pass_btn {
+    background-color: #078231 !important;
+    color: #fff;
+}
+
+.cancel_btn {
+    background-color: #BF6262 !important;
+    color: #000;
+    border: 1px solid #BF6262 !important;
+    /* padding-left: 30px;
+    padding-right: 30px; */
 }

@@ -19,15 +19,15 @@ export default function ClassTeacher() {
                     <Row className="mb-2">
                         <Form.Group as={Col} md="4">
                             <Form.Label>Class <span className="required_icon">*</span></Form.Label>
-                            <Form.Control title="text" name="title" placeholder='Class Name' />
+                            <Form.Control title="text" name="title" />
                         </Form.Group>
                         <Form.Group as={Col} md="4">
                             <Form.Label>Section<span className="required_icon">*</span></Form.Label>
-                            <Form.Control title="text" name="title" placeholder='Class Name' />
+                            <Form.Control title="text" name="title" />
                         </Form.Group>
                         <Form.Group as={Col} md="4">
                             <Form.Label>Select Teacher<span className="required_icon">*</span></Form.Label>
-                            <Form.Control title="text" name="title" placeholder='Class Name' />
+                            <Form.Control title="text" name="title" />
                         </Form.Group>
                     </Row>
                     <Row>

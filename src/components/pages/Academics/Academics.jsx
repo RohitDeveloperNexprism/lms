@@ -13,7 +13,7 @@ export default function Academics() {
                 <Card.Header className="card-header custom_card_header border-bottom-0">
                     <Row className='w-100'>
                         <Col md={6}>
-                            <h3 className="card-title">Classess List</h3>
+                            <h3 className="card-title">Classes List</h3>
                         </Col>
                         <Col md={6} className='text-end'>
                             <div className='add_class_btn' onClick={() => dispatch(openModal({ componentName: 'AddClass', data: 'check' }))}>

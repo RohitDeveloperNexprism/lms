@@ -211,9 +211,15 @@ export const MENUITEMS = [
         type: "sub",
         active: false,
         children: [
-          // {
-          //   path: `${import.meta.env.BASE_URL}students-list`, type: "link", title: "Students List",
-          // },
+          {
+            path: `${import.meta.env.BASE_URL}room-list`, type: "link", title: "Room List",
+          },
+          {
+            path: `${import.meta.env.BASE_URL}mess`, type: "link", title: "Mess",
+          },
+          {
+            path: `${import.meta.env.BASE_URL}visitors`, type: "link", title: "Visitors",
+          },
         ],
       },
     ],

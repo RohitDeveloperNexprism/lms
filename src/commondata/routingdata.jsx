@@ -21,6 +21,11 @@ import AcademicSchedule from '../components/syllabus-section/AcademicSchedule';
 import CreateExam from '../components/exam/CreateExam';
 import ExamSchedule from '../components/exam/ExamSchedule';
 import PreviousExam from '../components/exam/PreviousExam';
+import RoomList from '../components/pages/hostel/RoomList';
+import HostelStudent from '../components/pages/hostel/student/HostelStudent';
+import Mess from '../components/pages/hostel/mess/Mess';
+import Visitors from '../components/pages/hostel/visitors/Visitors';
+import VisitorAdd from '../components/pages/hostel/visitors/VisitorAdd';
 const Dashboard = lazy(() => import("../components/dashboard/dashboard"));
 
 export const RouterData = [
@@ -48,5 +53,17 @@ export const RouterData = [
     { path: `${import.meta.env.BASE_URL}/create-exam`, element: <CreateExam /> },
     { path: `${import.meta.env.BASE_URL}/exam-schedule`, element: <ExamSchedule /> },
     { path: `${import.meta.env.BASE_URL}/previous-exam`, element: <PreviousExam /> },
+
+
+
+
+
+
+    // devvrat routes
+    { path: `${import.meta.env.BASE_URL}/room-list`, element: <RoomList /> },
+    { path: `${import.meta.env.BASE_URL}/room/:id`, element: <HostelStudent /> },
+    { path: `${import.meta.env.BASE_URL}/mess`, element: <Mess /> },
+    { path: `${import.meta.env.BASE_URL}/visitors`, element: <Visitors /> },
+    { path: `${import.meta.env.BASE_URL}/visitors-add`, element: <VisitorAdd /> },
 
 ];
