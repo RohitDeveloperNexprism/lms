@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Button, Card, Col, Form, Row } from 'react-bootstrap';
 import DataTable from 'react-data-table-component';
 import logo from "../assets/images/logo/Photo.png";
+import ViewPendingFees from '../components/finance/pending-fees/ViewPendingFees';
 
 
 export default function PendingFeesDataTabel() {

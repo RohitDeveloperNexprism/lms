@@ -101,7 +101,6 @@ export const MENUITEMS = [
     ],
   },
   // {
-
   //   title: "Teachers",
   //   menutitle: "Elements",
   //   Items: [
@@ -207,6 +206,9 @@ export const MENUITEMS = [
           {
             path: `${import.meta.env.BASE_URL}payroll`, type: "link", title: "Payroll",
           },
+          {
+            path: `${import.meta.env.BASE_URL}fees-structure`, type: "link", title: "Fees Structure",
+          },
         ],
       },
     ],
@@ -233,7 +235,52 @@ export const MENUITEMS = [
       },
     ],
   },
-
+  {
+    menutitle: "Roles & Access",
+    Items: [
+      {
+        title: "Roles & Access",
+        icon: "fe fe-dollar-sign",
+        type: "sub",
+        active: false,
+        children: [
+          {
+            path: `${import.meta.env.BASE_URL}create-role`, type: "link", title: "Create Role",
+          },
+          {
+            path: `${import.meta.env.BASE_URL}create-user`, type: "link", title: "Create User",
+          },
+          {
+            path: `${import.meta.env.BASE_URL}assign-user`, type: "link", title: "Assign User",
+          },
+        ],
+      },
+    ],
+  },
+  {
+    menutitle: "Download Center",
+    Items: [
+      {
+        title: "Download Center",
+        icon: "fe fe-dollar-sign",
+        type: "sub",
+        active: false,
+        children: [
+          {
+            path: `${import.meta.env.BASE_URL}download-date`, type: "link", title: "Download Data",
+          },
+        ],
+      },
+    ],
+  },
+  {
+    menutitle: "Alumini",
+    Items: [
+      {
+        path: `${import.meta.env.BASE_URL}alumini`, icon: "fe fe-truck", type: "link", active: false, title: "Alumini",
+      },
+    ],
+  },
   {
     menutitle: "Transport",
     Items: [

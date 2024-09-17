@@ -212,3 +212,16 @@
 .border-right {
     border-right: 2px solid rgb(191, 189, 189);
 }
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+.btn-hover:hover {
+    background-color: rgb(18, 107, 157);
+    color: white;
+}
+
+.text-main {
+    color: rgb(18, 107, 157) m !important;
+}

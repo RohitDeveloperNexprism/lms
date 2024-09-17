@@ -30,6 +30,12 @@ import CollectedFees from '../components/finance/colected-fees/ColectedFees';
 import PendingFees from '../components/finance/pending-fees/PendingFees';
 import SchoolExpenses from '../components/finance/school-expenses/SchoolExpenses';
 import PayRoll from '../components/finance/payroll/payRoll';
+import StudentFees from '../components/finance/student-fees/StudentFees';
+import Alumini from '../components/Alumni/Alumini';
+import CreateRole from '../components/roles-access/create-role/CreateRole';
+import CreateUser from '../components/roles-access/create-user/CreateUser';
+import AssignRole from '../components/roles-access/assign-role/AssignRole';
+import DownloadData from '../components/download-center/download-data/DownloadData';
 const Dashboard = lazy(() => import("../components/dashboard/dashboard"));
 
 export const RouterData = [
@@ -61,6 +67,12 @@ export const RouterData = [
     { path: `${import.meta.env.BASE_URL}/pending-fees`, element: <PendingFees /> },
     { path: `${import.meta.env.BASE_URL}/school-expenses`, element: <SchoolExpenses /> },
     { path: `${import.meta.env.BASE_URL}/payroll`, element: <PayRoll /> },
+    { path: `${import.meta.env.BASE_URL}/fees-structure`, element: <StudentFees /> },
+    { path: `${import.meta.env.BASE_URL}/alumini`, element: <Alumini /> },
+    { path: `${import.meta.env.BASE_URL}/create-role`, element: <CreateRole /> },
+    { path: `${import.meta.env.BASE_URL}/create-user`, element: <CreateUser /> },
+    { path: `${import.meta.env.BASE_URL}/assign-user`, element: <AssignRole /> },
+    { path: `${import.meta.env.BASE_URL}/download-date`, element: <DownloadData /> },
 
 
 
