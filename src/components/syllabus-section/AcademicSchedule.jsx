@@ -2,7 +2,7 @@ import React, { useRef } from 'react';
 import { Button, Card, Col, Form, Row } from 'react-bootstrap';
 import { options_for_sunEditor } from "../../commondata/formEditorOptions";
 import 'suneditor/dist/css/suneditor.min.css';
-import SunEditor from "suneditor-react"; // Correct import
+import SunEditor from "suneditor-react";
 
 export default function AcademicSchedule() {
     const fileInputRef = useRef(null);

@@ -225,3 +225,41 @@
 .text-main {
     color: rgb(18, 107, 157) m !important;
 }
+
+
+.border-new-primary {
+    border: 1px solid rgb(223, 189, 249);
+    border-radius: 20px;
+}
+
+.bg-announcementp-card {
+    background-color: rgb(229, 238, 239);
+}
+
+.anglebutton {
+    background-color: white !important;
+    border-radius: 50% !important;
+}
+
+.bg-notice-card {
+    background-color: rgb(229, 234, 242) !important;
+}
+
+.rounded-button {
+    background-color: #f39c12 !important;
+    border-radius: 50% !important;
+}
+
+.book-library {
+    background-color: rgb(241, 253, 255) !important;
+    border-radius: 25px !important;
+    color: #88d3ff !important;
+}
+
+.font--size {
+    font-size: 5px !important;
+}
+
+.text-width {
+    width: 100%;
+}

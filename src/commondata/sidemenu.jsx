@@ -274,6 +274,82 @@ export const MENUITEMS = [
     ],
   },
   {
+    menutitle: "Create Clubs",
+    Items: [
+      {
+        title: "Create Clubs",
+        icon: "fe fe-dollar-sign",
+        type: "sub",
+        active: false,
+        children: [
+          {
+            path: `${import.meta.env.BASE_URL}create-clubs`, type: "link", title: "Create Clubs",
+          },
+          {
+            path: `${import.meta.env.BASE_URL}manage-clubs`, type: "link", title: "Manage Clubs",
+          },
+        ],
+      },
+    ],
+  },
+  {
+    menutitle: "Reports",
+    Items: [
+      {
+        title: "Reports",
+        icon: "fe fe-dollar-sign",
+        type: "sub",
+        active: false,
+        children: [
+          {
+            path: `${import.meta.env.BASE_URL}download-reports`, type: "link", title: "Download Reports",
+          },
+        ],
+      },
+    ],
+  },
+  {
+    menutitle: "Announcement",
+    Items: [
+      {
+        title: "Announcement",
+        icon: "fe fe-dollar-sign",
+        type: "sub",
+        active: false,
+        children: [
+          {
+            path: `${import.meta.env.BASE_URL}create-announcement`, type: "link", title: "Create Announcement",
+          },
+          {
+            path: `${import.meta.env.BASE_URL}view-announcement`, type: "link", title: "View Announcement",
+          },
+        ],
+      },
+    ],
+  },
+  {
+    menutitle: "Library",
+    Items: [
+      {
+        title: "Library",
+        icon: "fe fe-dollar-sign",
+        type: "sub",
+        active: false,
+        children: [
+          {
+            path: `${import.meta.env.BASE_URL}book-list`, type: "link", title: "Book List",
+          },
+          {
+            path: `${import.meta.env.BASE_URL}create-book`, type: "link", title: "Create Book",
+          },
+          {
+            path: `${import.meta.env.BASE_URL}assign-book`, type: "link", title: "Assign Book",
+          },
+        ],
+      },
+    ],
+  },
+  {
     menutitle: "Alumini",
     Items: [
       {
@@ -317,7 +393,23 @@ export const MENUITEMS = [
     menutitle: "Message",
     Items: [
       {
-        path: `${import.meta.env.BASE_URL}#`, icon: "icon icon-speech", type: "link", active: false, title: "Message",
+        path: `${import.meta.env.BASE_URL}message`, icon: "icon icon-speech", type: "link", active: false, title: "Message",
+      },
+    ],
+  },
+  {
+    menutitle: "Discussion",
+    Items: [
+      {
+        title: "Discussion",
+        icon: "fe fe-dollar-sign",
+        type: "sub",
+        active: false,
+        children: [
+          {
+            path: `${import.meta.env.BASE_URL}manage-group`, type: "link", title: "Manage Group",
+          },
+        ],
       },
     ],
   },

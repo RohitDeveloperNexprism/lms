@@ -36,6 +36,16 @@ import CreateRole from '../components/roles-access/create-role/CreateRole';
 import CreateUser from '../components/roles-access/create-user/CreateUser';
 import AssignRole from '../components/roles-access/assign-role/AssignRole';
 import DownloadData from '../components/download-center/download-data/DownloadData';
+import CreateClubs from '../components/clubs/create-clubs/CreateClubs';
+import ManageClubs from '../components/clubs/create-clubs/manage-clubs/ManageClubs';
+import DownloadReports from '../components/reports/download-reports/DownloadReports';
+import CreateAnnouncement from '../components/announcement/create-announcement/CreateAnnouncement';
+import ViewAnnouncement from '../components/announcement/view-announcement/ViewAnnouncement';
+import BookList from '../components/library/book-list/BookList';
+import CreateBook from '../components/library/create-book/CreateBook';
+import AssignBook from '../components/library/assign-book/AssignBook';
+import ManageMessage from '../components/message/ManageMessage';
+import ManageGroup from '../components/discussion/ManageGroup';
 const Dashboard = lazy(() => import("../components/dashboard/dashboard"));
 
 export const RouterData = [
@@ -73,6 +83,16 @@ export const RouterData = [
     { path: `${import.meta.env.BASE_URL}/create-user`, element: <CreateUser /> },
     { path: `${import.meta.env.BASE_URL}/assign-user`, element: <AssignRole /> },
     { path: `${import.meta.env.BASE_URL}/download-date`, element: <DownloadData /> },
+    { path: `${import.meta.env.BASE_URL}/create-clubs`, element: <CreateClubs /> },
+    { path: `${import.meta.env.BASE_URL}/manage-clubs`, element: <ManageClubs /> },
+    { path: `${import.meta.env.BASE_URL}/download-reports`, element: <DownloadReports /> },
+    { path: `${import.meta.env.BASE_URL}/create-announcement`, element: <CreateAnnouncement /> },
+    { path: `${import.meta.env.BASE_URL}/view-announcement`, element: <ViewAnnouncement /> },
+    { path: `${import.meta.env.BASE_URL}/book-list`, element: <BookList /> },
+    { path: `${import.meta.env.BASE_URL}/create-book`, element: <CreateBook /> },
+    { path: `${import.meta.env.BASE_URL}/assign-book`, element: <AssignBook /> },
+    { path: `${import.meta.env.BASE_URL}/message`, element: <ManageMessage /> },
+    { path: `${import.meta.env.BASE_URL}/manage-group`, element: <ManageGroup /> },
 
 
 
