@@ -263,3 +263,17 @@
 .text-width {
     width: 100%;
 }
+
+.create-btn {
+    background-color: rgb(17, 125, 17) !important;
+}
+
+.cancel-btn {
+    background-color: rgb(246, 57, 57) !important;
+}
+
+.border-custom {
+    border: 1px dashed black;
+    width: 100%;
+    height: 200px;
+}

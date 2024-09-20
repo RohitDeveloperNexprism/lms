@@ -409,6 +409,63 @@ export const MENUITEMS = [
           {
             path: `${import.meta.env.BASE_URL}manage-group`, type: "link", title: "Manage Group",
           },
+          {
+            path: `${import.meta.env.BASE_URL}create-group`, type: "link", title: "Create Group",
+          },
+        ],
+      },
+    ],
+  },
+  {
+    menutitle: "Time Table",
+    Items: [
+      {
+        title: "Time Table",
+        icon: "fe fe-dollar-sign",
+        type: "sub",
+        active: false,
+        children: [
+          {
+            path: `${import.meta.env.BASE_URL}create-time-table`, type: "link", title: "Create Time Table",
+          },
+          {
+            path: `${import.meta.env.BASE_URL}view-time-table`, type: "link", title: "View Time Table",
+          },
+        ],
+      },
+    ],
+  },
+  {
+    menutitle: "General Setting",
+    Items: [
+      {
+        title: "General Setting",
+        icon: "fe fe-dollar-sign",
+        type: "sub",
+        active: false,
+        children: [
+          {
+            path: `${import.meta.env.BASE_URL}general-setting`, type: "link", title: "General Setting",
+          },
+          {
+            path: `${import.meta.env.BASE_URL}profile-setting`, type: "link", title: "Profile Setting",
+          },
+        ],
+      },
+    ],
+  },
+  {
+    menutitle: "Manage Leaves",
+    Items: [
+      {
+        title: "Manage Leaves",
+        icon: "fe fe-dollar-sign",
+        type: "sub",
+        active: false,
+        children: [
+          {
+            path: `${import.meta.env.BASE_URL}manage-application`, type: "link", title: "Manage Application",
+          },
         ],
       },
     ],

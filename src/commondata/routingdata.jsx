@@ -46,6 +46,12 @@ import CreateBook from '../components/library/create-book/CreateBook';
 import AssignBook from '../components/library/assign-book/AssignBook';
 import ManageMessage from '../components/message/ManageMessage';
 import ManageGroup from '../components/discussion/ManageGroup';
+import CreateGroup from '../components/discussion/CreateGroup';
+import CreateTimeTable from '../components/time-table/CreateTimeTable';
+import ViewTimeTable from '../components/time-table/ViewTimeTable';
+import GeneralSetting from '../components/setting/GeneralSetting';
+import ProfileSetting from '../components/setting/ProfileSetting';
+import ManageLeave from '../components/leave-application/ManageLeave';
 const Dashboard = lazy(() => import("../components/dashboard/dashboard"));
 
 export const RouterData = [
@@ -93,6 +99,12 @@ export const RouterData = [
     { path: `${import.meta.env.BASE_URL}/assign-book`, element: <AssignBook /> },
     { path: `${import.meta.env.BASE_URL}/message`, element: <ManageMessage /> },
     { path: `${import.meta.env.BASE_URL}/manage-group`, element: <ManageGroup /> },
+    { path: `${import.meta.env.BASE_URL}/create-group`, element: <CreateGroup /> },
+    { path: `${import.meta.env.BASE_URL}/create-time-table`, element: <CreateTimeTable /> },
+    { path: `${import.meta.env.BASE_URL}/view-time-table`, element: <ViewTimeTable /> },
+    { path: `${import.meta.env.BASE_URL}/general-setting`, element: <GeneralSetting /> },
+    { path: `${import.meta.env.BASE_URL}/profile-setting`, element: <ProfileSetting /> },
+    { path: `${import.meta.env.BASE_URL}/manage-application`, element: <ManageLeave /> },
 
 
 
