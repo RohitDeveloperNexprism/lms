@@ -7,6 +7,7 @@ export const MENUITEMS = [
       },
     ],
   },
+
   {
     menutitle: "Academics",
     Items: [
@@ -33,6 +34,7 @@ export const MENUITEMS = [
       },
     ],
   },
+
   {
 
     title: "Teachers",
@@ -61,6 +63,7 @@ export const MENUITEMS = [
       },
     ],
   },
+
   {
     menutitle: "Students",
     Items: [
@@ -92,33 +95,7 @@ export const MENUITEMS = [
       },
     ],
   },
-  // {
-  //   title: "Teachers",
-  //   menutitle: "Elements",
-  //   Items: [
-  //     {
-  //       title: "Teachers",
-  //       icon: "database",
-  //       type: "sub",
-  //       active: false,
-  //       children: [
-  //         {
-  //           path: `${import.meta.env.BASE_URL}teachers`, type: "link", title: "Teachers List",
-  //         },
-  //         {
-  //           path: `${import.meta.env.BASE_URL}add-teacher`, type: "link", title: "Add Teacher",
-  //         },
-  //         {
-  //           path: `${import.meta.env.BASE_URL}assign-teacher`, type: "link", title: "Assign Teacher",
-  //         },
-  //         {
-  //           path: `${import.meta.env.BASE_URL}complaints`, type: "link", title: "Complaints",
-  //         },
 
-  //       ],
-  //     },
-  //   ],
-  // },
   {
     title: "Syllabus",
     menutitle: "Elements",
@@ -161,22 +138,7 @@ export const MENUITEMS = [
       },
     ],
   },
-  {
-    menutitle: "Attendance",
-    Items: [
-      {
-        title: "Attendance",
-        icon: "fe fe-users",
-        type: "sub",
-        active: false,
-        children: [
-          // {
-          //   path: `${import.meta.env.BASE_URL}students-list`, type: "link", title: "Students List",
-          // },
-        ],
-      },
-    ],
-  },
+
   {
     menutitle: "Finance",
     Items: [
@@ -206,6 +168,23 @@ export const MENUITEMS = [
     ],
   },
   {
+    menutitle: "Attendance",
+    Items: [
+      {
+        title: "Attendance",
+        icon: "fe fe-users",
+        type: "sub",
+        active: false,
+        children: [
+          // {
+          //   path: `${import.meta.env.BASE_URL}students-list`, type: "link", title: "Students List",
+          // },
+        ],
+      },
+    ],
+  },
+
+  {
     menutitle: "Hostel",
     Items: [
       {
@@ -222,28 +201,6 @@ export const MENUITEMS = [
           },
           {
             path: `${import.meta.env.BASE_URL}visitors`, type: "link", title: "Visitors",
-          },
-        ],
-      },
-    ],
-  },
-  {
-    menutitle: "Roles & Access",
-    Items: [
-      {
-        title: "Roles & Access",
-        icon: "fe fe-dollar-sign",
-        type: "sub",
-        active: false,
-        children: [
-          {
-            path: `${import.meta.env.BASE_URL}create-role`, type: "link", title: "Create Role",
-          },
-          {
-            path: `${import.meta.env.BASE_URL}create-user`, type: "link", title: "Create User",
-          },
-          {
-            path: `${import.meta.env.BASE_URL}assign-user`, type: "link", title: "Assign User",
           },
         ],
       },
@@ -284,26 +241,49 @@ export const MENUITEMS = [
   },
 
   {
-    menutitle: "Download Center",
+    menutitle: "Alumini",
     Items: [
       {
-        title: "Download Center",
+        path: `${import.meta.env.BASE_URL}alumini`, icon: "fe fe-truck", type: "link", active: false, title: "Alumini",
+      },
+    ],
+  },
+  {
+    menutitle: "Roles & Access",
+    Items: [
+      {
+        title: "Roles & Access",
         icon: "fe fe-dollar-sign",
         type: "sub",
         active: false,
         children: [
           {
-            path: `${import.meta.env.BASE_URL}download-date`, type: "link", title: "Download Data",
+            path: `${import.meta.env.BASE_URL}create-role`, type: "link", title: "Create Role",
+          },
+          {
+            path: `${import.meta.env.BASE_URL}create-user`, type: "link", title: "Create User",
+          },
+          {
+            path: `${import.meta.env.BASE_URL}assign-user`, type: "link", title: "Assign User",
           },
         ],
       },
     ],
   },
   {
-    menutitle: "Create Clubs",
+    menutitle: "Manage Events",
     Items: [
       {
-        title: "Create Clubs",
+        path: `${import.meta.env.BASE_URL}events`, icon: "fe fe-truck", type: "link", active: false, title: "Events",
+      },
+    ],
+  },
+
+  {
+    menutitle: "Clubs",
+    Items: [
+      {
+        title: "Clubs",
         icon: "fe fe-dollar-sign",
         type: "sub",
         active: false,
@@ -376,22 +356,6 @@ export const MENUITEMS = [
     ],
   },
   {
-    menutitle: "Alumini",
-    Items: [
-      {
-        path: `${import.meta.env.BASE_URL}alumini`, icon: "fe fe-truck", type: "link", active: false, title: "Alumini",
-      },
-    ],
-  },
-  {
-    menutitle: "Events",
-    Items: [
-      {
-        path: `${import.meta.env.BASE_URL}events`, icon: "fe fe-truck", type: "link", active: false, title: "Events",
-      },
-    ],
-  },
-  {
     menutitle: "Transport",
     Items: [
       {
@@ -414,36 +378,17 @@ export const MENUITEMS = [
     ],
   },
   {
-    menutitle: "Inventory",
+    menutitle: "Download Center",
     Items: [
       {
-        title: "Inventory",
+        title: "Download Center",
         icon: "fe fe-dollar-sign",
         type: "sub",
         active: false,
         children: [
           {
-            path: `${import.meta.env.BASE_URL}item-category`, type: "link", title: "Item Category",
+            path: `${import.meta.env.BASE_URL}download-date`, type: "link", title: "Download Data",
           },
-          {
-            path: `${import.meta.env.BASE_URL}item-list`, type: "link", title: "Item List",
-          },
-          {
-            path: `${import.meta.env.BASE_URL}item-store`, type: "link", title: "Item Store",
-          },
-          {
-            path: `${import.meta.env.BASE_URL}supplier`, type: "link", title: "Supplier",
-          },
-          {
-            path: `${import.meta.env.BASE_URL}item-payment`, type: "link", title: "Item Payment",
-          },
-          {
-            path: `${import.meta.env.BASE_URL}item-purchase-list`, type: "link", title: "Item Purchase List",
-          },
-          {
-            path: `${import.meta.env.BASE_URL}item-sell`, type: "link", title: "Item Sell",
-          },
-
         ],
       },
     ],
@@ -468,130 +413,172 @@ export const MENUITEMS = [
       },
     ],
   },
-  {
-    menutitle: "Reports",
-    Items: [
-      {
-        title: "Reports",
-        icon: "fe fe-dollar-sign",
-        type: "sub",
-        active: false,
-        children: [
-          {
-            path: `${import.meta.env.BASE_URL}student-report`, type: "link", title: "Student",
-          },
-          {
-            path: `${import.meta.env.BASE_URL}teacher-report`, type: "link", title: "Teacher",
-          }
 
-        ],
-      },
-    ],
-  },
 
-  {
-    menutitle: "Notice",
-    Items: [
-      {
-        path: `${import.meta.env.BASE_URL}#`, icon: "icon icon-speech", type: "link", active: false, title: "Notice",
-      },
-    ],
-  },
-  {
-    menutitle: "Calendar",
-    Items: [
-      {
-        path: `${import.meta.env.BASE_URL}#`, icon: "fe fe-calendar", type: "link", active: false, title: "Calendar",
-      },
-    ],
-  },
-  {
-    menutitle: "Library",
-    Items: [
-      {
-        path: `${import.meta.env.BASE_URL}#`, icon: "fe fe-book-open", type: "link", active: false, title: "Library",
-      },
-    ],
-  },
-  {
-    menutitle: "Message",
-    Items: [
-      {
-        path: `${import.meta.env.BASE_URL}message`, icon: "icon icon-speech", type: "link", active: false, title: "Message",
-      },
-    ],
-  },
-  {
-    menutitle: "Discussion",
-    Items: [
-      {
-        title: "Discussion",
-        icon: "fe fe-dollar-sign",
-        type: "sub",
-        active: false,
-        children: [
-          {
-            path: `${import.meta.env.BASE_URL}manage-group`, type: "link", title: "Manage Group",
-          },
-          {
-            path: `${import.meta.env.BASE_URL}create-group`, type: "link", title: "Create Group",
-          },
-        ],
-      },
-    ],
-  },
-  {
-    menutitle: "Time Table",
-    Items: [
-      {
-        title: "Time Table",
-        icon: "fe fe-dollar-sign",
-        type: "sub",
-        active: false,
-        children: [
-          {
-            path: `${import.meta.env.BASE_URL}create-time-table`, type: "link", title: "Create Time Table",
-          },
-          {
-            path: `${import.meta.env.BASE_URL}view-time-table`, type: "link", title: "View Time Table",
-          },
-        ],
-      },
-    ],
-  },
-  {
-    menutitle: "General Setting",
-    Items: [
-      {
-        title: "General Setting",
-        icon: "fe fe-dollar-sign",
-        type: "sub",
-        active: false,
-        children: [
-          {
-            path: `${import.meta.env.BASE_URL}general-setting`, type: "link", title: "General Setting",
-          },
-          {
-            path: `${import.meta.env.BASE_URL}profile-setting`, type: "link", title: "Profile Setting",
-          },
-        ],
-      },
-    ],
-  },
-  {
-    menutitle: "Manage Leaves",
-    Items: [
-      {
-        title: "Manage Leaves",
-        icon: "fe fe-dollar-sign",
-        type: "sub",
-        active: false,
-        children: [
-          {
-            path: `${import.meta.env.BASE_URL}manage-application`, type: "link", title: "Manage Application",
-          },
-        ],
-      },
-    ],
-  },
+  // ----------------------------unknown------------------------------------------
+
+
+  // {
+  //   menutitle: "Inventory",
+  //   Items: [
+  //     {
+  //       title: "Inventory",
+  //       icon: "fe fe-dollar-sign",
+  //       type: "sub",
+  //       active: false,
+  //       children: [
+  //         {
+  //           path: `${import.meta.env.BASE_URL}item-category`, type: "link", title: "Item Category",
+  //         },
+  //         {
+  //           path: `${import.meta.env.BASE_URL}item-list`, type: "link", title: "Item List",
+  //         },
+  //         {
+  //           path: `${import.meta.env.BASE_URL}item-store`, type: "link", title: "Item Store",
+  //         },
+  //         {
+  //           path: `${import.meta.env.BASE_URL}supplier`, type: "link", title: "Supplier",
+  //         },
+  //         {
+  //           path: `${import.meta.env.BASE_URL}item-payment`, type: "link", title: "Item Payment",
+  //         },
+  //         {
+  //           path: `${import.meta.env.BASE_URL}item-purchase-list`, type: "link", title: "Item Purchase List",
+  //         },
+  //         {
+  //           path: `${import.meta.env.BASE_URL}item-sell`, type: "link", title: "Item Sell",
+  //         },
+
+  //       ],
+  //     },
+  //   ],
+  // },
+  // {
+  //   menutitle: "Reports",
+  //   Items: [
+  //     {
+  //       title: "Reports",
+  //       icon: "fe fe-dollar-sign",
+  //       type: "sub",
+  //       active: false,
+  //       children: [
+  //         {
+  //           path: `${import.meta.env.BASE_URL}student-report`, type: "link", title: "Student",
+  //         },
+  //         {
+  //           path: `${import.meta.env.BASE_URL}teacher-report`, type: "link", title: "Teacher",
+  //         }
+
+  //       ],
+  //     },
+  //   ],
+  // },
+
+  // {
+  //   menutitle: "Notice",
+  //   Items: [
+  //     {
+  //       path: `${import.meta.env.BASE_URL}#`, icon: "icon icon-speech", type: "link", active: false, title: "Notice",
+  //     },
+  //   ],
+  // },
+  // {
+  //   menutitle: "Calendar",
+  //   Items: [
+  //     {
+  //       path: `${import.meta.env.BASE_URL}#`, icon: "fe fe-calendar", type: "link", active: false, title: "Calendar",
+  //     },
+  //   ],
+  // },
+  // {
+  //   menutitle: "Library",
+  //   Items: [
+  //     {
+  //       path: `${import.meta.env.BASE_URL}#`, icon: "fe fe-book-open", type: "link", active: false, title: "Library",
+  //     },
+  //   ],
+  // },
+  // {
+  //   menutitle: "Message",
+  //   Items: [
+  //     {
+  //       path: `${import.meta.env.BASE_URL}message`, icon: "icon icon-speech", type: "link", active: false, title: "Message",
+  //     },
+  //   ],
+  // },
+  // {
+  //   menutitle: "Discussion",
+  //   Items: [
+  //     {
+  //       title: "Discussion",
+  //       icon: "fe fe-dollar-sign",
+  //       type: "sub",
+  //       active: false,
+  //       children: [
+  //         {
+  //           path: `${import.meta.env.BASE_URL}manage-group`, type: "link", title: "Manage Group",
+  //         },
+  //         {
+  //           path: `${import.meta.env.BASE_URL}create-group`, type: "link", title: "Create Group",
+  //         },
+  //       ],
+  //     },
+  //   ],
+  // },
+  // {
+  //   menutitle: "Time Table",
+  //   Items: [
+  //     {
+  //       title: "Time Table",
+  //       icon: "fe fe-dollar-sign",
+  //       type: "sub",
+  //       active: false,
+  //       children: [
+  //         {
+  //           path: `${import.meta.env.BASE_URL}create-time-table`, type: "link", title: "Create Time Table",
+  //         },
+  //         {
+  //           path: `${import.meta.env.BASE_URL}view-time-table`, type: "link", title: "View Time Table",
+  //         },
+  //       ],
+  //     },
+  //   ],
+  // },
+  // {
+  //   menutitle: "General Setting",
+  //   Items: [
+  //     {
+  //       title: "General Setting",
+  //       icon: "fe fe-dollar-sign",
+  //       type: "sub",
+  //       active: false,
+  //       children: [
+  //         {
+  //           path: `${import.meta.env.BASE_URL}general-setting`, type: "link", title: "General Setting",
+  //         },
+  //         {
+  //           path: `${import.meta.env.BASE_URL}profile-setting`, type: "link", title: "Profile Setting",
+  //         },
+  //       ],
+  //     },
+  //   ],
+  // },
+  // {
+  //   menutitle: "Manage Leaves",
+  //   Items: [
+  //     {
+  //       title: "Manage Leaves",
+  //       icon: "fe fe-dollar-sign",
+  //       type: "sub",
+  //       active: false,
+  //       children: [
+  //         {
+  //           path: `${import.meta.env.BASE_URL}manage-application`, type: "link", title: "Manage Application",
+  //         },
+  //       ],
+  //     },
+  //   ],
+  // },
+
+
 ];
