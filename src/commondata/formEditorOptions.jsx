@@ -53,7 +53,7 @@ export const options_for_sunEditor = {
         ["removeFormat"]
     ],
     defaultTag: "p",
-    minHeight: "100px",
+    minHeight: "300px",
     showPathLabel: false,
     attributesWhitelist: {
         all: "style",

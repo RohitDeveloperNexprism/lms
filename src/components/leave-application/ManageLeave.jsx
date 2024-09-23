@@ -1,7 +1,7 @@
-import { name } from 'browser-sync';
-import React, { useState } from 'react'
+import React, { useState } from 'react';
 import { Button, Card, Col, Form, OverlayTrigger, Row, Tooltip } from 'react-bootstrap';
 import DataTable from 'react-data-table-component';
+import { Link } from 'react-router-dom'; // Import Link for navigation
 
 export default function ManageLeave() {
     const [selectedRows, setSelectedRows] = useState([]);
@@ -40,11 +40,9 @@ export default function ManageLeave() {
         },
         {
             name: 'Status',
-            selector: row => {
-                return (
-                    <Button className='book-library' variant=''>Available</Button>
-                )
-            },
+            cell: (row) => (
+                <Button className='book-library' variant='success'>Available</Button>
+            ),
             sortable: true,
         },
         {
@@ -55,7 +53,7 @@ export default function ManageLeave() {
                         <i className="fa fa-trash-o text-danger"></i>
                     </OverlayTrigger>
                     <OverlayTrigger placement="top" overlay={<Tooltip>View</Tooltip>}>
-                        <Link to={"/teacher-profile"}><i className="fa fa-ellipsis-v"></i></Link>
+                        <Link to="/teacher-profile"><i className="fa fa-ellipsis-v"></i></Link>
                     </OverlayTrigger>
                 </div>
             ),
@@ -84,7 +82,56 @@ export default function ManageLeave() {
             phone: "+91 8279834994",
             address: "123 Main St, Anytown, USA",
         },
-
+        {
+            id: "2016589765",
+            name: "Rohit Joshi",
+            date: "09-07-2224",
+            phone: "+91 8279834994",
+            address: "123 Main St, Anytown, USA",
+        },
+        {
+            id: "2016589765",
+            name: "Rohit Joshi",
+            date: "09-07-2224",
+            phone: "+91 8279834994",
+            address: "123 Main St, Anytown, USA",
+        },
+        {
+            id: "2016589765",
+            name: "Rohit Joshi",
+            date: "09-07-2224",
+            phone: "+91 8279834994",
+            address: "123 Main St, Anytown, USA",
+        },
+        {
+            id: "2016589765",
+            name: "Rohit Joshi",
+            date: "09-07-2224",
+            phone: "+91 8279834994",
+            address: "123 Main St, Anytown, USA",
+        },
+        {
+            id: "2016589765",
+            name: "Rohit Joshi",
+            date: "09-07-2224",
+            phone: "+91 8279834994",
+            address: "123 Main St, Anytown, USA",
+        },
+        {
+            id: "2016589765",
+            name: "Rohit Joshi",
+            date: "09-07-2224",
+            phone: "+91 8279834994",
+            address: "123 Main St, Anytown, USA",
+        },
+        {
+            id: "2016589765",
+            name: "Rohit Joshi",
+            date: "09-07-2224",
+            phone: "+91 8279834994",
+            address: "123 Main St, Anytown, USA",
+        },
+        
     ];
 
     const paginationComponentOptions = {
@@ -93,6 +140,7 @@ export default function ManageLeave() {
         selectAllRowsItem: true,
         selectAllRowsItemText: 'All',
     };
+
     return (
         <>
             <Row className='mt-4'>
@@ -118,7 +166,7 @@ export default function ManageLeave() {
                                     </Col>
                                     <Col as={Col} md={6} className='text-end'>
                                         <Form.Control
-                                            name=''
+                                            name='search'
                                             placeholder='Search by ID, Name or Date'
                                             className='accordian-rounded-radious'
                                         />
@@ -142,5 +190,5 @@ export default function ManageLeave() {
                 </Col>
             </Row>
         </>
-    )
+    );
 }

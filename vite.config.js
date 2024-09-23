@@ -1,5 +1,5 @@
-import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react'
+import { defineConfig } from 'vite';
+import react from '@vitejs/plugin-react';
 
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -8,10 +8,12 @@ export default defineConfig({
     'process.env': {},
   },
   build: {
-    chunkSizeWarningLimit: 50000
+    chunkSizeWarningLimit: 50000,
+    rollupOptions: {
+      external: ['browser-sync/lib/server/utils'], // Mark the problematic module as external
+    },
   },
   server: {
     host: true,
   },
-    
-})
+});

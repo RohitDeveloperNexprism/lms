@@ -1,20 +1,12 @@
 export const MENUITEMS = [
-  // {
-  //   menutitle: "MAIN",
-  //   Items: [
-  //     {
-  //       path: `${import.meta.env.BASE_URL}dashboard`, icon: "fe fe-home", type: "link", active: false, title: "Dashboard",
-  //     },
-  //   ],
-  // },
-  // {
-  //   // menutitle: "MAIN",
-  //   Items: [
-  //     {
-  //       path: `${import.meta.env.BASE_URL}academics`, icon: "database", type: "link", active: false, title: "Academics",
-  //     },
-  //   ],
-  // },
+  {
+    menutitle: "MAIN",
+    Items: [
+      {
+        path: `${import.meta.env.BASE_URL}dashboard`, icon: "fe fe-home", type: "link", active: false, title: "Dashboard",
+      },
+    ],
+  },
   {
     menutitle: "Academics",
     Items: [
@@ -257,6 +249,40 @@ export const MENUITEMS = [
       },
     ],
   },
+
+
+  {
+    menutitle: "HR",
+    Items: [
+      {
+        title: "HR",
+        icon: "fe fe-dollar-sign",
+        type: "sub",
+        active: false,
+        children: [
+          {
+            path: `${import.meta.env.BASE_URL}add-staff`, type: "link", title: "Add Staff",
+          },
+          {
+            path: `${import.meta.env.BASE_URL}staff-attendance`, type: "link", title: "Staff Attendance",
+          },
+          {
+            path: `${import.meta.env.BASE_URL}staff-feedback`, type: "link", title: "Staff Feedback",
+          },
+          {
+            path: `${import.meta.env.BASE_URL}performance-tracking`, type: "link", title: "Performance Tracking",
+          },
+          {
+            path: `${import.meta.env.BASE_URL}appointments`, type: "link", title: "Appointments",
+          },
+          {
+            path: `${import.meta.env.BASE_URL}mange-inquiry`, type: "link", title: "Mange Inquiry",
+          },
+        ],
+      },
+    ],
+  },
+
   {
     menutitle: "Download Center",
     Items: [
@@ -358,13 +384,111 @@ export const MENUITEMS = [
     ],
   },
   {
-    menutitle: "Transport",
+    menutitle: "Events",
     Items: [
       {
-        path: `${import.meta.env.BASE_URL}#`, icon: "fe fe-truck", type: "link", active: false, title: "Transport",
+        path: `${import.meta.env.BASE_URL}events`, icon: "fe fe-truck", type: "link", active: false, title: "Events",
       },
     ],
   },
+  {
+    menutitle: "Transport",
+    Items: [
+      {
+        title: "Transport",
+        icon: "fe fe-dollar-sign",
+        type: "sub",
+        active: false,
+        children: [
+          {
+            path: `${import.meta.env.BASE_URL}add-vehicle`, icon: "fe fe-truck", type: "link", active: false, title: "Add Vehicle",
+          },
+          {
+            path: `${import.meta.env.BASE_URL}add-route`, icon: "fe fe-truck", type: "link", active: false, title: "Add Route",
+          },
+          {
+            path: `${import.meta.env.BASE_URL}assign-passenger`, icon: "fe fe-truck", type: "link", active: false, title: "Assign Passenger",
+          },
+        ],
+      },
+    ],
+  },
+  {
+    menutitle: "Inventory",
+    Items: [
+      {
+        title: "Inventory",
+        icon: "fe fe-dollar-sign",
+        type: "sub",
+        active: false,
+        children: [
+          {
+            path: `${import.meta.env.BASE_URL}item-category`, type: "link", title: "Item Category",
+          },
+          {
+            path: `${import.meta.env.BASE_URL}item-list`, type: "link", title: "Item List",
+          },
+          {
+            path: `${import.meta.env.BASE_URL}item-store`, type: "link", title: "Item Store",
+          },
+          {
+            path: `${import.meta.env.BASE_URL}supplier`, type: "link", title: "Supplier",
+          },
+          {
+            path: `${import.meta.env.BASE_URL}item-payment`, type: "link", title: "Item Payment",
+          },
+          {
+            path: `${import.meta.env.BASE_URL}item-purchase-list`, type: "link", title: "Item Purchase List",
+          },
+          {
+            path: `${import.meta.env.BASE_URL}item-sell`, type: "link", title: "Item Sell",
+          },
+
+        ],
+      },
+    ],
+  },
+  {
+    menutitle: "Behavior Report",
+    Items: [
+      {
+        title: "Behavior Report",
+        icon: "fe fe-dollar-sign",
+        type: "sub",
+        active: false,
+        children: [
+          {
+            path: `${import.meta.env.BASE_URL}add-behavior`, type: "link", title: "Add Behavior",
+          },
+          {
+            path: `${import.meta.env.BASE_URL}behavior-list`, type: "link", title: "Behavior List",
+          }
+
+        ],
+      },
+    ],
+  },
+  {
+    menutitle: "Reports",
+    Items: [
+      {
+        title: "Reports",
+        icon: "fe fe-dollar-sign",
+        type: "sub",
+        active: false,
+        children: [
+          {
+            path: `${import.meta.env.BASE_URL}student-report`, type: "link", title: "Student",
+          },
+          {
+            path: `${import.meta.env.BASE_URL}teacher-report`, type: "link", title: "Teacher",
+          }
+
+        ],
+      },
+    ],
+  },
+
   {
     menutitle: "Notice",
     Items: [

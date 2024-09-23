@@ -52,6 +52,31 @@ import ViewTimeTable from '../components/time-table/ViewTimeTable';
 import GeneralSetting from '../components/setting/GeneralSetting';
 import ProfileSetting from '../components/setting/ProfileSetting';
 import ManageLeave from '../components/leave-application/ManageLeave';
+import AddStaff from '../components/pages/hr/AddStaff';
+import StaffAttendance from '../components/pages/hr/staff-attendance/StaffAttendance';
+import PayrollDetails from '../components/pages/hr/payroll-details/PayrollDetails';
+import BankDetails from '../components/pages/hr/bank-details/BankDetails';
+import DocumentInfo from '../components/pages/hr/document-info/DocumentInfo';
+import StaffFeedback from '../components/pages/hr/staff-feedback/StaffFeedback';
+import PerformanceTracking from '../components/pages/hr/performance-tracking/PerformanceTracking';
+import Appointments from '../components/pages/hr/appointments/Appointments';
+import MangeInquiry from '../components/pages/hr/mange-inquiry/MangeInquiry';
+import Events from '../components/pages/events/Events';
+import AddVehicle from '../components/pages/transport/AddVehicle';
+import AddRoute from '../components/pages/transport/add-route/AddRoute';
+import AssignPassenger from '../components/pages/transport/assign-passenger/AssignPassenger';
+import ItemCategory from '../components/pages/inventory/ItemCategory';
+import ItemList from '../components/pages/inventory/item-list/ItemList';
+import ItemStore from '../components/pages/inventory/item-store/ItemStore';
+import Supplier from '../components/pages/inventory/supplier/Supplier';
+import ItemPayment from '../components/pages/inventory/item-payment/ItemPayment';
+import ItemPurchaseList from '../components/pages/inventory/item-purchase-list/ItemPurchaseList';
+import ItemSell from '../components/pages/inventory/item-sell/ItemSell';
+import AddBehavior from '../components/pages/behavior/AddBehavior';
+import BehaviorList from '../components/pages/behavior/BehaviorList';
+import StudentBehaviorReport from '../components/pages/behavior/StudentBehaviorReport';
+import Students from '../components/pages/resports/Students';
+import TeacherReports from '../components/pages/resports/Teacher';
 const Dashboard = lazy(() => import("../components/dashboard/dashboard"));
 
 export const RouterData = [
@@ -117,5 +142,30 @@ export const RouterData = [
     { path: `${import.meta.env.BASE_URL}/mess`, element: <Mess /> },
     { path: `${import.meta.env.BASE_URL}/visitors`, element: <Visitors /> },
     { path: `${import.meta.env.BASE_URL}/visitors-add`, element: <VisitorAdd /> },
+    { path: `${import.meta.env.BASE_URL}/add-staff`, element: <AddStaff /> },
+    { path: `${import.meta.env.BASE_URL}/staff-attendance`, element: <StaffAttendance /> },
+    { path: `${import.meta.env.BASE_URL}/payroll-details`, element: <PayrollDetails /> },
+    { path: `${import.meta.env.BASE_URL}/bank-details`, element: <BankDetails /> },
+    { path: `${import.meta.env.BASE_URL}/documents-info`, element: <DocumentInfo /> },
+    { path: `${import.meta.env.BASE_URL}/staff-feedback`, element: <StaffFeedback /> },
+    { path: `${import.meta.env.BASE_URL}/performance-tracking`, element: <PerformanceTracking /> },
+    { path: `${import.meta.env.BASE_URL}/appointments`, element: <Appointments /> },
+    { path: `${import.meta.env.BASE_URL}/mange-inquiry`, element: <MangeInquiry /> },
+    { path: `${import.meta.env.BASE_URL}/events`, element: <Events /> },
+    { path: `${import.meta.env.BASE_URL}/add-vehicle`, element: <AddVehicle /> },
+    { path: `${import.meta.env.BASE_URL}/add-route`, element: <AddRoute /> },
+    { path: `${import.meta.env.BASE_URL}/assign-passenger`, element: <AssignPassenger /> },
+    { path: `${import.meta.env.BASE_URL}/item-category`, element: <ItemCategory /> },
+    { path: `${import.meta.env.BASE_URL}/item-list`, element: <ItemList /> },
+    { path: `${import.meta.env.BASE_URL}/item-store`, element: <ItemStore /> },
+    { path: `${import.meta.env.BASE_URL}/supplier`, element: <Supplier /> },
+    { path: `${import.meta.env.BASE_URL}/item-payment`, element: <ItemPayment /> },
+    { path: `${import.meta.env.BASE_URL}/item-purchase-list`, element: <ItemPurchaseList /> },
+    { path: `${import.meta.env.BASE_URL}/item-sell`, element: <ItemSell /> },
+    { path: `${import.meta.env.BASE_URL}/add-behavior`, element: <AddBehavior /> },
+    { path: `${import.meta.env.BASE_URL}/behavior-list`, element: <BehaviorList /> },
+    { path: `${import.meta.env.BASE_URL}/student-behavior-report`, element: <StudentBehaviorReport /> },
+    { path: `${import.meta.env.BASE_URL}/student-report`, element: <Students /> },
+    { path: `${import.meta.env.BASE_URL}/teacher-report`, element: <TeacherReports /> },
 
 ];
