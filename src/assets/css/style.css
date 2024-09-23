@@ -17283,8 +17283,8 @@ html.fullscreenie {
 
 @media (min-width: 992px) {
     .main-header-center .form-control {
-        height: 40px;
-        border-radius: 20px;
+        height: 45px;
+        border-radius: 50px;
         background: #fff;
         border: 1px solid #0000006E;
     }
@@ -18378,6 +18378,7 @@ ul.inbox-pagination li {
 .main-content.app-content .main-container {
     padding-left: 0;
     padding-right: 0;
+    margin-top: 20px;
 }
 
 .hor-rightangle {
@@ -30200,7 +30201,7 @@ body.fixed-header .header {
 
 .app-header .main-header-center .btn,
 .hor-header .main-header-center .btn {
-    top: 0px;
+    top: 3px;
 }
 
 @media (min-width: 992px) {
