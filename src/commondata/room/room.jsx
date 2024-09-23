@@ -103,9 +103,7 @@ const RoomDataTable = () => {
     return (
         <>
             <Row className="search_bar">
-                <Col as={Col} xxl={6} xl={5} lg={12} md={12} sm={12} xs={12}>
-                    <h3 className="card-title">Room  list</h3>
-                </Col>
+                <Col as={Col} xxl={6} xl={5} lg={12} md={12} sm={12} xs={12}></Col>
                 <Col as={Col} xxl={6} xl={7} lg={12} md={12} sm={12} xs={12}>
                     <div className='d-flex flex-wrap flex-md-nowrap gap-3 mb-4'>
                         <div className='search_bar_wrapper w-100'>

@@ -26,7 +26,7 @@ function Authlogin() {
   }
   let navigate = useNavigate();
   const RouteChange = () => {
-    let path = `${import.meta.env.BASE_URL}dashboard/`;
+    let path = `${import.meta.env.BASE_URL}academics/`;
     navigate(path);
   }
   document.querySelector("body").classList.add("login-img")
@@ -117,7 +117,7 @@ function Authlogin() {
                             </div>
                             <div className="container-login100-form-btn">
                               <Link onClick={Login1}
-                                to={`${import.meta.env.BASE_URL}dashboard/`}
+                                to={`${import.meta.env.BASE_URL}academics/`}
                                 className="login100-form-btn btn-primary"
                               >
                                 Login
@@ -188,7 +188,7 @@ function Authlogin() {
                             </div>
                             <div className="container-login100-form-btn">
                               <Link onClick={Login}
-                                to={`${import.meta.env.BASE_URL}dashboard/`}
+                                to={`${import.meta.env.BASE_URL}academics/`}
                                 className="login100-form-btn btn-primary"
                               >
                                 Login

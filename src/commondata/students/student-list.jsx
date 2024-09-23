@@ -188,9 +188,7 @@ const StudentsListDataTable = () => {
     return (
         <>
             <Row className="search_bar">
-                <Col as={Col} lg={7} md={12} sm={12} xs={12}>
-                    <h3 className="card-title">All Students List </h3>
-                </Col>
+                <Col as={Col} lg={7} md={12} sm={12} xs={12}></Col>
                 <Col as={Col} lg={5} md={12} sm={12} xs={12}>
                     <div className='search_bar_wrapper'>
                         <input
@@ -204,7 +202,7 @@ const StudentsListDataTable = () => {
                         <Button type="button" className="btn btn-icon search_btn"> <i className="fa fa-sliders text-black"></i> Filters</Button>
                     </div>
                 </Col>
-            </Row >
+            </Row>
 
             <DataTable
                 columns={columns}

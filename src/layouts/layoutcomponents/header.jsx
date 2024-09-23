@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Dropdown, Navbar, Container, Button, Form, ListGroup } from "react-bootstrap";
-import { Link, useLocation } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { Imagesdata } from "../../commondata/commonimages";
 import { MENUITEMS } from '../../commondata/sidemenu';
 import { options } from "../../commondata/data";
@@ -145,9 +145,6 @@ export function Header() {
     setNavData(allElement2)
 
   }
-  const location = useLocation();
-  const getPath = location.pathname;
-
   return (
     <Navbar expand="md" className="app-header header sticky">
       <Container fluid className="main-container">
@@ -271,15 +268,15 @@ export function Header() {
                       <i className="fe fe-minimize fullscreen-button"></i>
                     </Link>
                   </div> */}
-                  <Form.Group>
-                    <Form.Select className={`select_branch ${getPath === '/dashboard/' ? '' : 'd-none'}`}>
-                      <option value="">Select Class</option>
-                      <option value="option1">Option1</option>
-                      <option value="option2">Option2</option>
-                      <option value="option3">Option3</option>
-                      <option value="option4">Option4</option>
-                    </Form.Select>
-                  </Form.Group>
+                  {/* <Form.Group className='custom_col mb-2'>
+                    <Select
+                      options={options}
+                      name="category"
+                      placeholder="Select Teacher"
+                      className="select_box"
+                      isSearchable
+                    />
+                  </Form.Group> */}
                   <Dropdown className="dropdown d-md-flex message">
                     <Dropdown.Toggle
                       className="nav-link icon text-center d-flex"
@@ -547,8 +544,8 @@ export function Header() {
             </div> */}
           </div>
         </div>
-      </Container >
-    </Navbar >
+      </Container>
+    </Navbar>
   );
 }
 

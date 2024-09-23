@@ -47,7 +47,7 @@ export default function Subjects() {
                     </div>
                     <Row>
                         <Form.Group as={Col} md="12" className=' mt-4'>
-                            <Button type="submit" className="ms-auto px-6">Save Subject</Button>
+                            <Button type="submit" className="btn-dark ms-auto px-6">Save Subject</Button>
                         </Form.Group>
                     </Row>
                     {/* </Col>*/}

@@ -114,9 +114,7 @@ const MessDataTable = () => {
     return (
         <>
             <Row className="search_bar">
-                <Col as={Col} xxl={4} xl={4} lg={12} md={12} sm={12} xs={12}>
-                    <h3 className="card-title">Available Food Items</h3>
-                </Col>
+                <Col as={Col} xxl={4} xl={4} lg={12} md={12} sm={12} xs={12}></Col>
                 <Col as={Col} xxl={8} xl={8} lg={12} md={12} sm={12} xs={12}>
                     <div className='d-flex flex-wrap flex-md-nowrap gap-3'>
                         <div className='search_bar_wrapper w-100'>

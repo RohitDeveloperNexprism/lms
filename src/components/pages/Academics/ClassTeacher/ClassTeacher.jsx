@@ -32,7 +32,7 @@ export default function ClassTeacher() {
                     </Row>
                     <Row>
                         <Form.Group as={Col} md="12" className=' mt-4'>
-                            <Button type="submit" className="ms-auto px-6">Assign Teacher</Button>
+                            <Button type="submit" className="btn-dark ms-auto px-6">Assign Teacher</Button>
                         </Form.Group>
                     </Row>
                     {/* <Row>

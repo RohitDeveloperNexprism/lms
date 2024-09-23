@@ -9,11 +9,11 @@ export default function ClassTeacher() {
             {/* <Row> */}
             <Card className='mt-0 pt-0'>
                 <Card.Header className="card-header border-bottom-0">
-                    {/* <Row className='w-100'>
+                    <Row className='w-100'>
                         <Col md={6}>
                             <h3 className="card-title">All Students List </h3>
                         </Col>
-                    </Row> */}
+                    </Row>
                 </Card.Header>
                 <Card.Body className='pt-0'>
                     <StudentsListDataTable />

@@ -129,9 +129,7 @@ const VisitorDataTable = () => {
     return (
         <>
             <Row className="search_bar">
-                <Col as={Col} lg={9} md={7} sm={6} xs={12}>
-                    <h3 className="card-title">Visitors List</h3>
-                </Col>
+                <Col as={Col} lg={9} md={7} sm={6} xs={12}></Col>
                 <Col as={Col} lg={3} md={5} sm={6} xs={12}>
                     <div className='d-flex flex-wrap flex-md-nowrap gap-3'>
                         <div className='search_bar_wrapper w-100'>

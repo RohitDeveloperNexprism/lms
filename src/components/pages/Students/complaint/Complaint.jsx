@@ -81,7 +81,7 @@ export default function Complaint() {
                         <div className="mt-6">
                             <Row className="justify-content-center">
                                 {[1, 2, 3].map((item, index) => (
-                                    <Col key={index} md={6} lg={4} className='mb-4'>
+                                    <Col key={index} md={6} lg={4}>
                                         <div className="text-white complaint">
                                             <div className="complaint_title">
                                                 <span className=''>Student's name</span>
